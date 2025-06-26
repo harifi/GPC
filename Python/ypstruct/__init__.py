@@ -60,7 +60,6 @@ class structure (dict):
                 self_copy[field] = self[field].deepcopy()
             else:
                 self_copy[field] = cp.deepcopy(self[field])
-        
         return self_copy
 
     # Repeats (replicates) the structure to create an stratucre array (eg. for initialization)
